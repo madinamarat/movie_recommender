@@ -1,0 +1,42 @@
+
+<html lang="en">
+  <head>
+  <!-- <meta charset="utf-8"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Recommender</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Courgette|Pacifico:400,700" rel="styles">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="main-splash">  
+    <h2 style="text-align: center">Movie Recommender</h2><br>
+    <img src="/static/img/movies1.jpg" style="pad 250px; width: 70vh;">
+  
+    <br><br>
+  <div >
+    <form action='/recommender' method='get' style="text-align:center">
+      <p style="font-size:14pt">What are your favorite movies?</p><br>
+        <input type="text" name="movie1" placeholder="Enter a movie title" required>
+        <br><p></p>
+        <input type="text" name="movie2"  placeholder="Enter a movie title" required>
+        <br><p></p>
+        <input type="text" name="movie3"  placeholder="Enter a movie title" required>
+        <br><br>
+      <input type="submit" value="What should I watch?" class="submit-button">
+    </form>
+  </div>
+</section>
+
+
+<div class="container" style="align-content:center">
+  <a style="font-size:12pt" href="/topfifty">50 best movies</a>
+</div>
+
+{% endblock %}
