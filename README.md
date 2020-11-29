@@ -1,6 +1,6 @@
 # Movie recommender with a web interface
 
-![Alt Text](https://github.com/madinamarat/movie_recommender/blob/main/movie_recommender.gif)
+![Alt Text](https://github.com/madinamarat/movie_recommender/blob/master/movie_recommender.gif)
 
 The website provides recommendations based on three favorite movies entered by user.
 
